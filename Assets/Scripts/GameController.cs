@@ -38,19 +38,19 @@ public class GameController : MonoBehaviour {
 
     private void instantiateWalls() {
         Debug.Log("instantiating walls");
-        float x = -1f;
+        float x = 0f;
         float y = 0f;
-        float z = 0f;
+        float z = -1f;
         for (int i = 0; i < 40; i++)
         {
             this.walls[i] = GameObject.Instantiate<Wall>(this.wallPrefab);
-            if(i < 100)
+            if(i < 10)
                 this.walls[i].transform.position = new Vector3(x, y, z+=1);
-            else if(i < 200)
+            else if(i < 20)
                 this.walls[i].transform.position = new Vector3(x+=1, y, z);
-            else if (i < 300)
+            else if (i < 30)
                 this.walls[i].transform.position = new Vector3(x, y, z-=1);
-            else if (i < 400)
+            else
                 this.walls[i].transform.position = new Vector3(x-=1, y, z);
         }
     }
