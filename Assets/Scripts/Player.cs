@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Portal")
+        if (col.gameObject.name.Contains("Portal"))
         {
             this.OnHitPortal();
         }

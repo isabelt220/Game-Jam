@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour {
 
     public void EndGame()
     {
-        // TODO: 
+        Debug.Log("You win!");
     }
 
     private void Awake()
