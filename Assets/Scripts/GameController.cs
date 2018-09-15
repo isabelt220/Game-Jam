@@ -38,7 +38,7 @@ public class GameController : MonoBehaviour {
 
     private void instantiateWalls() {
         Debug.Log("instantiating walls");
-        float x = 0f;
+        float x = -1f;
         float y = 0f;
         float z = 0f;
         for (int i = 0; i < 40; i++)
