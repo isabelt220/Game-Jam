@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
     private Player player1;
     // private Player player2;
     private Portal portal;
-    private Wall[] walls;
+    private Wall[] walls = new Wall[1000];
 
     public static GameController Instance {
         get {
@@ -37,13 +37,23 @@ public class GameController : MonoBehaviour {
     }
 
     private void instantiateWalls() {
+        Debug.Log("instantiating walls");
         float x = 0f;
         float y = 0f;
         float z = 0f;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 40; i++)
         {
             this.walls[i] = GameObject.Instantiate<Wall>(this.wallPrefab);
-            this.walls[i].transform.position = new Vector3(x, y, z+i);
+            if(i < 100)
+                this.walls[i].transform.position = new Vector3(x, y, z+=1);
+            else if(i < 200)
+                this.walls[i].transform.position = new Vector3(x+=1, y, z);
+            else if (i < 300)
+                this.walls[i].transform.position = new Vector3(x, y, z-=1);
+            else if (i < 400)
+                this.walls[i].transform.position = new Vector3(x-=1, y, z);
         }
     }
+
+
 }
