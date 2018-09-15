@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 114497520663342708}
   - component: {fileID: 143832371786836916}
   - component: {fileID: 54431309009545024}
+  - component: {fileID: 95608045928979330}
+  - component: {fileID: 111946036953222600}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -157,7 +159,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494507955219498}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: c900ae2dad9de4d40a6f5f7c90a85fc4, type: 3}
 --- !u!54 &54431309009545024
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -192,6 +194,38 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1041974069370460}
   m_Enabled: 1
+--- !u!95 &95608045928979330
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494507955219498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: c900ae2dad9de4d40a6f5f7c90a85fc4, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &111946036953222600
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494507955219498}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114497520663342708
 MonoBehaviour:
   m_ObjectHideFlags: 1
