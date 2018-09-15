@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 23684093668318590}
   - component: {fileID: 65793861351237442}
   - component: {fileID: 114497520663342708}
+  - component: {fileID: 143832371786836916}
   - component: {fileID: 54431309009545024}
   - component: {fileID: 95299264021709902}
   m_Layer: 0
@@ -55,13 +56,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1041974069370460}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.3189198, y: -0, z: -0, w: 0.94778174}
   m_LocalPosition: {x: -0.66, y: 1.15, z: -0.95}
+=======
+  m_LocalRotation: {x: 0.33354655, y: -0, z: -0, w: 0.9427337}
+  m_LocalPosition: {x: -0.9299998, y: 5.19, z: -4.44}
+>>>>>>> 735ca76ace06750dec33ac666f4fd4d9dfa6aae8
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4579666116528600}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 37.195004, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.968002, y: 0, z: 0}
 --- !u!4 &4579666116528600
 Transform:
   m_ObjectHideFlags: 1
@@ -69,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494507955219498}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.055, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4560825429079270}
@@ -171,7 +177,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &65793861351237442
 BoxCollider:
@@ -222,3 +228,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeedPerSecond: 1
+--- !u!143 &143832371786836916
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494507955219498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
