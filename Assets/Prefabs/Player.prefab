@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 65793861351237442}
   - component: {fileID: 114497520663342708}
   - component: {fileID: 54431309009545024}
+  - component: {fileID: 95299264021709902}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1041974069370460}
   m_LocalRotation: {x: 0.3189198, y: -0, z: -0, w: 0.94778174}
-  m_LocalPosition: {x: -0.93, y: 6.94, z: -8.27}
+  m_LocalPosition: {x: -0.66, y: 1.15, z: -0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4579666116528600}
@@ -156,7 +157,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494507955219498}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 58d664707cbce43bf8f59249bcc54248, type: 3}
 --- !u!54 &54431309009545024
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -182,7 +183,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &81539553755654080
 AudioListener:
@@ -191,6 +192,24 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1041974069370460}
   m_Enabled: 1
+--- !u!95 &95299264021709902
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494507955219498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 58d664707cbce43bf8f59249bcc54248, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114497520663342708
 MonoBehaviour:
   m_ObjectHideFlags: 1

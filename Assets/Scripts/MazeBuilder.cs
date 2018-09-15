@@ -5,9 +5,19 @@ using UnityEngine;
 public class MazeBuilder : MonoBehaviour
 {
     private static readonly FloorBehaviour.TileType[,] tiles = {
-        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
-        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
-        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Lava }
+        //{ FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        //{ FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        //{ FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Lava }
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Lava, FloorBehaviour.TileType.Lava, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Lava, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Lava, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Lava, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal },
+        { FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal, FloorBehaviour.TileType.Normal }
     };
 
     [SerializeField] private FloorBehaviour floorPrefab;
