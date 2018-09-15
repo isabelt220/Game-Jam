@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
     private Player player1;
     // private Player player2;
     private Portal portal;
-    private Wall[] walls;
+    private Wall[] walls = new Wall[10];
 
     public static GameController Instance {
         get {

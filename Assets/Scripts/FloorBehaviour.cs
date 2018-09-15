@@ -10,7 +10,7 @@ public class FloorBehaviour : MonoBehaviour {
     [SerializeField] GameObject normalFloorTile;
     [SerializeField] GameObject lavaFloorTile;
 
-    private TileType currentType;
+    public TileType currentType { get; private set; }
 
     public void Initialize(TileType initialType) {
         this.currentType = initialType;
@@ -46,4 +46,6 @@ public class FloorBehaviour : MonoBehaviour {
                 break;
         }
     }
+
+
 }

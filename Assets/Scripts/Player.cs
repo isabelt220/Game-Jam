@@ -7,11 +7,6 @@ public class Player : MonoBehaviour {
 
     private Vector3 initialPosition;
 
-    public void ResetPlayer()
-    {
-        this.transform.position = this.initialPosition;
-    }
-
     private void Start()
     {
         this.initialPosition = this.transform.position;
@@ -33,15 +28,27 @@ public class Player : MonoBehaviour {
 
     private void OnCollisionEnter(Collision col)
     {
-        Debug.Log(col.gameObject.name);
         if (col.gameObject.name == "Portal")
         {
             this.OnHitPortal();
         }
+
+        FloorBehaviour tileHit = col.gameObject.GetComponent<FloorBehaviour>();
+        if (tileHit != null) {
+            if (tileHit.currentType == FloorBehaviour.TileType.Lava) {
+                Debug.Log("The player has hit the lava");
+                this.ResetPlayer();
+            }
+        }
     }
 
-    public void OnHitPortal() {
+    private void OnHitPortal() {
         Debug.Log("The player has hit the portal");
         GameController.Instance.EndGame();
+    }
+
+    private void ResetPlayer()
+    {
+        this.transform.position = this.initialPosition;
     }
 }
